@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pic">
+        <div class="logo">
+            <img src="odin-lined.png" alt="odin">
+            <p class="odin">ODIN</p>
+        </div>
+        <p class="source">Photo by <a href="https://unsplash.com/es/@eliapelle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Elia Pellegrini</a> on <a href="https://unsplash.com/es"> Unsplash</a></p>
+    </div>
+    <div class="right">
+        <div class="upper">
+            <p class="heading">This is some text for an imaginary service. It was made so that the creator could practice
+                 working with HTML/CSS form elements and styling. Isn't it nice?</p>
+            <p class="tagline">I <em>sure</em> think so!</p>
+        </div>
+        <div class="field-container">
+            <h2>Let's do this!</h2>
+            <form action="made-up-url.com" method="post" id="signup">
+                <div class="col1">
+                    <ul>
+                        <li>
+                            <label for="firstname">First Name:</label>
+                            <input type="text" id="firstname" name="first_name" placeholder="first" required>
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="user_email" placeholder="@" required>
+                        </li>
+                        <li>
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="user_pass" minlength="8" required>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <ul>
+                        <li>
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" id="lastname" name="last_name" placeholder="last" required>
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="user_phone" placeholder="111-234-567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        </li>
+                        <li>
+                            <label for="confirm-pass">Confirm Password:</label>
+                            <input type="password" id="confirm-pass" name="user_pass_confirm" minlength="8" required>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <button type="submit" form="signup">Create Account</button>
+        <p class="login">Already have an account? <a href="">Log in</a></p>
+
+    </div>
+    
+    
+</body>
+</html>
+
